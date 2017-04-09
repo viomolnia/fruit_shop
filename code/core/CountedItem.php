@@ -29,7 +29,7 @@ class CountedItem extends PurchaseItem {
         return $this->getCount() * parent::getUnitPrice();
     }
 
-    function __write()
+    function __printInCheque()
     {
         echo sprintf($this->getCount()
                             ." pieces of "

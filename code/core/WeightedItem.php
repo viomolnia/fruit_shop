@@ -29,7 +29,7 @@ class WeightedItem extends PurchaseItem {
         return $this->getWeight() * parent::getUnitPrice();
     }
 
-    function __write()
+    function __printInCheque()
     {
         echo sprintf($this->getWeight()
                             ." kgs of "
